@@ -9,3 +9,13 @@ RSpec.feature "Timeline", type: :feature do
     expect(page).to have_content("Hello, world!")
   end
 end
+
+RSpec.feature "index page", type: :feature do
+  scenario "see index page" do
+    visit "/"
+    click_link "Sign in"
+    expect(current_path).to eq('/signin')
+  end
+end
+
+
