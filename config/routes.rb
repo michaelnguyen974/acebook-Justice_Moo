@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'signup', to: 'welcome#signup'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
+  post 'signup', to: 'welcome#profile'
   # root 'welcome#index'
 
   resources :posts
