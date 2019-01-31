@@ -9,5 +9,9 @@ Rails.application.routes.draw do
   post 'signup', to: 'welcome#profile'
   # root 'welcome#index'
 
-  resources :posts
+  post 'profile', to: 'welcome#profile'
+
+  # resources :posts
+  resources :users
+
 end

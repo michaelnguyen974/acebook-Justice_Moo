@@ -16,5 +16,7 @@ describe "sign up", type: :feature do
     fill_in "password_confirmation", with: "testpassword"
     click_button 'Sign Up'
     expect(page).to have_content('Welcome test@test.com')
+    expect(page).to have_content('Only appears on this page')
+    expect(current_path).to eq('/profile')
   end
 end
