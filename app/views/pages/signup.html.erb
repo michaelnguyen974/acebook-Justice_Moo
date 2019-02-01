@@ -1,3 +1,17 @@
 <p>Something<p>
 
   <%= link_to 'Home page', root_path %>
+
+<%= form_with(url: "users/create", method: "post") do %>
+<%= label_tag(:firstName, "Enter your first name")%>
+<%= text_field_tag(:firstName)%><br>
+<%= label_tag(:surname, "Enter your surname")%>
+<%= text_field_tag(:surname)%><br>
+<%= label_tag(:email, "Enter your email:") %>
+<%= email_field_tag(:email) %><br>
+<%= label_tag(:password, "Enter a password:") %>
+<%= password_field_tag(:password) %><br>
+<%= label_tag(:password_confirmation, "Please confirm your password:") %>
+<%= password_field_tag(:password_confirmation) %><br>
+<%= submit_tag("Sign Up") %>
+<% end %>
