@@ -1,6 +1,6 @@
 
 <% @posts.each do |post| %>
-  <p><%= post.message %> | <%= link_to "Delete post", post, :method=> :delete %></p>
+  <p><%= post.message %> | <a id="post<%=post.id%>"><%= link_to "Delete post", post, :method=> :delete %></p>
 <% end %>
 <%= link_to new_post_path do %>
   New post

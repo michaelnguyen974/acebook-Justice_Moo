@@ -26,7 +26,7 @@ feature "Timeline", type: :feature do
     sign_up
     make_a_post("Hello wad")
     expect(page).to have_content("Hello wad")
-    click_on 'Delete post'
+    click_on 'post.id'
     expect(page).to not_have_content("Hello wad")
   end
 end
