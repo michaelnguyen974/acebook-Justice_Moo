@@ -2,6 +2,10 @@
 
 # Acebook #
 
+## App Screenshot ##
+
+![screen shot](https://user-images.githubusercontent.com/43742795/52489619-9843c380-2bba-11e9-92f8-669d1b01390e.png)
+
 ## project ##
 
 We are building a web app similar to Facebook, based on the following user stories :
