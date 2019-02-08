@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <h1><%= link_to "ⒶⒸⒺⒷᴼᴼⓀ", root_path %></h1>
+  <h1 class="logo"><%= link_to "ⒶⒸⒺⒷᴼᴼⓀ", root_path %></h1>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
   <div> <% if user_signed_in? %>
@@ -20,11 +20,26 @@
     </p>
     <% else %>
     <br>
-    <a href="<%= new_user_session_path%>"> Sign in
-    </a><br>
-    <a href="<%=  new_registration_path(User) %>">Sign up</a>
+
+  <center>
+    <div class="topnav">
+      <a class="Sign_in" href="<%= new_user_session_path%>"> Sign in
+      </a>
+      <a class="Sign_up" href="<%=  new_registration_path(User) %>">Sign up</a>
     <% end %>
-  </div>
+    </div>
+  </center>
+  
+
+<%# 
+  <div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div> %>
+
+
   <%= yield %>
 </body>
 </html>
